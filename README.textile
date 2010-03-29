@@ -3,9 +3,7 @@ h1. Introduction
 This project was forked from "Smeevil/acl9":http://github.com/smeevil/acl9
 The sole reason for this was in order for me to push it to "gemcutter":http://rubygems.org/gems/ktopping_acl9
 You can, thus, use smeevil's "system role" functionality by simply including:
-<pre><code>
-  config.gem "ktopping_acl9", :source => "http://gemcutter.org", :lib => "acl9"
-</code></pre>
+<pre><code>config.gem "ktopping_acl9", :source => "http://gemcutter.org", :lib => "acl9"</code></pre>
 in your config/environments.rb file.
 The original project (and - thus - documentation) is "here":http://github.com/be9/acl9
 
