@@ -8,10 +8,10 @@ task :default => :test
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = "acl9"
+    s.name = "ktopping_acl9"
     s.summary = "Yet another role-based authorization system for Rails"
-    s.email = "olegdashevskii@gmail.com"
-    s.homepage = "http://github.com/be9/acl9"
+    s.email = "kieran@getcontentment.com"
+    s.homepage = "http://github.com/ktopping/acl9"
     s.description = "Role-based authorization system for Rails with a nice DSL for access control lists"
     s.authors = ["oleg dashevskii"]
     s.files = FileList["[A-Z]*", "{lib,test}/**/*.rb"]
