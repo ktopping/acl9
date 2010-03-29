@@ -160,8 +160,9 @@ module Acl9
       def delete_role(role)
         if role
           self.role_objects.delete role
-
-          role.destroy if role.send(self._auth_subject_class_name.demodulize.tableize).empty?
+          if role.send(self._auth_subject_class_name.demodulize.tableize).empty?
+            role.destroy unless role.respond_to?(:system?) && role.system?
+          end
         end
       end
       
